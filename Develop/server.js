@@ -11,9 +11,6 @@ app.use(express.static('public'));
 mongoose.connect('mongodb://localhost/workout', {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}, (a, b)=>{
-  console.log(a);
-  console.log(b)
 });
 
 app.use(require('./routes'))
